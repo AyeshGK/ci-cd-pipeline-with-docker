@@ -1,11 +1,8 @@
-package lk.ac.mrt.cse.dbs.simpleexpensemanager;
+package lk.ac.mrt.cse.dbs.simpleexpensemanager.data.model;
 
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
 
 import org.junit.Test;
-
-import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.model.Account;
-
 
 public class AccountTest {
     private static final String TEST_ACCOUNT_NO = "12345sdf";
@@ -18,11 +15,6 @@ public class AccountTest {
     public AccountTest() {
         newAccount = new Account(TEST_ACCOUNT_NO, TEST_BANK_ACCOUNT_NAME, TEST_ACCOUNT_HOLDER_NAME, TEST_ACCOUNT_BALANCE);
     }
-
-//    @Before
-//    public void createAccount() {
-//        newAccount = new Account(TEST_ACCOUNT_NO, TEST_BANK_ACCOUNT_NAME, TEST_ACCOUNT_HOLDER_NAME, TEST_ACCOUNT_BALANCE);
-//    }
 
     @Test
     public void testGetAccountNo() {
@@ -71,8 +63,5 @@ public class AccountTest {
         assertTrue(newAccount.getBalance()==100.0);
         newAccount.setBalance(TEST_ACCOUNT_BALANCE);
     }
+
 }
-
-
-
-

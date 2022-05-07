@@ -1,15 +1,13 @@
-package lk.ac.mrt.cse.dbs.simpleexpensemanager;
+package lk.ac.mrt.cse.dbs.simpleexpensemanager.data.model;
 
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
 
 import org.junit.Test;
 
 import java.text.SimpleDateFormat;
 
-import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.model.ExpenseType;
-import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.model.Transaction;
-
 public class TransactionTest {
+
     SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
     private static final String TEST_DATE = "2022-01-01";
     private static final String TEST_ACCOUNT_NO = "12345sdf";
